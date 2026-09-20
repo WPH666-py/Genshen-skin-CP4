@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-原神 CP 壁纸套件 4 —— 自动安装器
+原神 CP 壁纸套件 5 —— 自动安装器
 
   genshen-cp4-install                 # 自动: 装依赖 -> 生成壁纸 -> 设为桌面 -> 注册已装 IDE
   genshen-cp4-install --no-wallpaper  # 只做 IDE 注册, 不动桌面壁纸

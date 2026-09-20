@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-原神 CP 壁纸套件 4 —— MCP (Model Context Protocol) 服务器
+原神 CP 壁纸套件 5 —— MCP (Model Context Protocol) 服务器
 
 让任意支持 MCP 的 AI 助手直接调用本套件换壁纸:
   * DSH Harness / Claude Code / Kimi Code / CodeX / Cursor / Trae / Windsurf 等
@@ -108,7 +108,7 @@ def tool_list_wallpapers(_args):
     if sc.count() > 1:
         lines += ["", "提示: 也可用序号 1-%d 指定 single 样式。" % sc.count()]
     else:
-        lines += ["", "本套件只有一张素材, 上列三种是同一张图的三种呈现方式。"]
+        lines += ["", "三张素材 x 三种摆法 = 9 种壁纸。换图用序号, 换摆法用 single/cover/showall 前缀。"]
     return _ok_text("\n".join(lines))
 
 
@@ -191,7 +191,7 @@ def _handle(msg):
                 "capabilities": {"tools": {"listChanged": False}},
                 "serverInfo": {"name": SERVER_NAME, "version": SERVER_VERSION},
                 "instructions": (
-                    "原神 CP 壁纸套件 4 (纳西妲 × 安柏)。"
+                    "原神 CP 壁纸套件 5 (桑多涅 × 哥伦比娅)。"
                     "用户说「换壁纸/换一张/切壁纸」时调用 set_wallpaper 或 next_wallpaper;"
                     "不确定可用样式时先调用 list_wallpapers。"
                 ),

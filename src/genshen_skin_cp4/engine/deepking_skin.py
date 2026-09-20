@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-原神CP4 · 纳西妲×安柏 —— DeepKing 皮肤(手工校色版)
+原神CP5 · 桑多涅×哥伦比娅 —— DeepKing 皮肤(手工校色版)
 
 DeepKing 支持两种接入方式:
 
@@ -9,7 +9,7 @@ DeepKing 支持两种接入方式:
      src/client/genshen-cp4.module.css, 「暗色」由其内置算法从亮色派生。
 
   B. 直接用本文件: 下面两套调色板是**逐槽位手工校色**的结果, 不经过任何推导,
-     夜景保留素材的深林墨绿, 而不是派生算法给出的中性灰。
+     夜景保留插画的夜紫墨黑, 而不是派生算法给出的中性灰。
 
 安装器(genshen-cp4 deepking)会把本调色板写成 genshen-cp4.skin.json,
 并生成可视化预览 genshen-cp4-preview.html, 方便导入前先看效果。
@@ -20,76 +20,76 @@ SKIN_ID = C.DEEPKING_SKIN_ID
 SKIN_NAME = C.DEEPKING_SKIN_NAME
 SKIN_DESC = C.DEEPKING_SKIN_DESC
 
-# ─────────────────────────────────────────────── 亮色 · 晨光米白(林间日光)
+# ─────────────────────────────────────────────── 亮色 · 晨光象牙(学园日光)
 LIGHT = {
-    "bg": "#fffdf6",
-    "bgText": "#1d2b16",
-    "sidebarBg": "#eef4e6",
-    "sidebarText": "#28381e",
-    "sidebarHover": "#e2eed8",
-    "sidebarSelected": "#cbe0bb",
-    "sidebarHeader": "#7b8c6b",
-    "editorBg": "#fffdf6",
-    "tabsBg": "#f3f7ec",
-    "tabBg": "#e9f0df",
-    "tabText": "#5c6f4b",
-    "tabActiveBg": "#fffdf6",
-    "tabActiveText": "#1d2b16",
-    "aiBg": "#f6faf0",
-    "aiText": "#1d2b16",
-    "aiTabText": "#5c6f4b",
-    "userBubbleBg": "#d5e8c4",
-    "userBubbleText": "#1d2b16",
-    "aiBubbleBg": "#fffdf6",
-    "aiBubbleText": "#1d2b16",
-    "aiBubbleBorder": "#c7dab4",
+    "bg": "#fdfbf7",
+    "bgText": "#241726",
+    "sidebarBg": "#f4eef2",
+    "sidebarText": "#33203a",
+    "sidebarHover": "#f0e2ec",
+    "sidebarSelected": "#e3cddd",
+    "sidebarHeader": "#8d7691",
+    "editorBg": "#fdfbf7",
+    "tabsBg": "#f8f2f6",
+    "tabBg": "#f1e7ee",
+    "tabText": "#6b5570",
+    "tabActiveBg": "#fdfbf7",
+    "tabActiveText": "#241726",
+    "aiBg": "#faf5f8",
+    "aiText": "#241726",
+    "aiTabText": "#6b5570",
+    "userBubbleBg": "#eccfdf",
+    "userBubbleText": "#241726",
+    "aiBubbleBg": "#fdfbf7",
+    "aiBubbleText": "#241726",
+    "aiBubbleBorder": "#dbc6d8",
     "systemBubbleBg": "#fff6dd",
     "systemBubbleText": "#8a6200",
-    "inputBg": "#fffdf6",
-    "inputText": "#1d2b16",
-    "inputBorder": "#a9c894",
-    "accent": "#4f9e4a",
+    "inputBg": "#fdfbf7",
+    "inputText": "#241726",
+    "inputBorder": "#c9a8c3",
+    "accent": "#a8326e",
     "accentText": "#ffffff",
-    "border": "#c7dab4",
-    "chipBg": "#dcecd0",
-    "chipText": "#2f6b2c",
-    "chipBorder": "#a9c894",
+    "border": "#dbc6d8",
+    "chipBg": "#eddae6",
+    "chipText": "#7d2153",
+    "chipBorder": "#c9a8c3",
 }
 
-# ─────────────────────────────────────────────── 夜景 · 深林墨绿(树影)
+# ─────────────────────────────────────────────── 夜景 · 夜紫墨黑(夜街紫光)
 DARK = {
-    "bg": "#141c10",
-    "bgText": "#e6efdb",
-    "sidebarBg": "#1d2816",
-    "sidebarText": "#c2d4ae",
-    "sidebarHover": "#28371e",
-    "sidebarSelected": "#354828",
-    "sidebarHeader": "#83966f",
-    "editorBg": "#141c10",
-    "tabsBg": "#182112",
-    "tabBg": "#1d2816",
-    "tabText": "#8fa07c",
-    "tabActiveBg": "#28371e",
-    "tabActiveText": "#e6efdb",
-    "aiBg": "#1d2816",
-    "aiText": "#e6efdb",
-    "aiTabText": "#8fa07c",
-    "userBubbleBg": "#3d5a2c",
-    "userBubbleText": "#eef5e4",
-    "aiBubbleBg": "#22301a",
-    "aiBubbleText": "#e6efdb",
-    "aiBubbleBorder": "#3a4d2c",
+    "bg": "#17101c",
+    "bgText": "#efe6f2",
+    "sidebarBg": "#221728",
+    "sidebarText": "#d0bcd6",
+    "sidebarHover": "#2e1f36",
+    "sidebarSelected": "#3d2a47",
+    "sidebarHeader": "#907d98",
+    "editorBg": "#17101c",
+    "tabsBg": "#1c1422",
+    "tabBg": "#221728",
+    "tabText": "#9d8aa5",
+    "tabActiveBg": "#2e1f36",
+    "tabActiveText": "#efe6f2",
+    "aiBg": "#221728",
+    "aiText": "#efe6f2",
+    "aiTabText": "#9d8aa5",
+    "userBubbleBg": "#5c2350",
+    "userBubbleText": "#f6ecf4",
+    "aiBubbleBg": "#281a30",
+    "aiBubbleText": "#efe6f2",
+    "aiBubbleBorder": "#453050",
     "systemBubbleBg": "#3a3118",
     "systemBubbleText": "#e8d9a0",
-    "inputBg": "#1e2a17",
-    "inputText": "#e6efdb",
-    "inputBorder": "#3a4d2c",
-    "accent": "#78c46c",
-    "accentText": "#0c1408",
-    "border": "#3a4d2c",
-    "chipBg": "#2f4522",
-    "chipText": "#cfe4bd",
-    "chipBorder": "#597a44",
+    "inputBg": "#251a2c",
+    "inputText": "#efe6f2",
+    "inputBorder": "#453050",
+    "accent": "#d1498c",
+    "accentText": "#160f1b",
+    "border": "#453050",
+    "chipBg": "#3b2743",
+    "chipText": "#e4cfe2",
+    "chipBorder": "#6d4577",
 }
 
 PALETTE_SLOTS = (
@@ -123,7 +123,7 @@ def definition(mascot_light=None, mascot_dark=None, source=None):
 
 def validate():
     """自检: 槽位齐全、色值合法、亮暗确实一浅一深、文字对比度够。"""
-    from . import _color as col
+    from ..engine import _color as col
 
     problems = []
     for label, pa in (("light", LIGHT), ("dark", DARK)):

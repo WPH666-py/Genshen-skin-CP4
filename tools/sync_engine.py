@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-引擎同步工具 —— 让 CP1 / CP2 / CP3 / CP4 共用同一套皮肤引擎, 不再各改一份。
+引擎同步工具 —— 让 CP1 / CP2 / CP3 / CP4 / CP5 共用同一套皮肤引擎, 不再各改一份。
 
 背景
 ----
@@ -76,6 +76,12 @@ PACKS = {
         "flat": False,
         "slug": "genshen_skin_cp4",
     },
+    "CP5": {
+        "repo": os.path.join(WORKSPACE, "Genshen-skin-CP5"),
+        "pkg": ("Genshen-skin-CP5", "src", "genshen_skin_cp5"),
+        "flat": False,
+        "slug": "genshen_skin_cp5",
+    },
 }
 
 # 只有本机真实存在的套件才参与, 缺一个不会报错
@@ -83,7 +89,7 @@ AVAILABLE = [k for k, v in PACKS.items() if os.path.isdir(v["repo"])]
 
 
 def engine_dir(key):
-    """引擎文件所在目录: CP1 是包根, CP2/CP3/CP4 是包内的 engine/。"""
+    """引擎文件所在目录: CP1 是包根, CP2~CP5 是包内的 engine/。"""
     v = PACKS[key]
     base = os.path.join(WORKSPACE, *v["pkg"])
     return base if v["flat"] else os.path.join(base, "engine")
@@ -98,7 +104,8 @@ def sha(path):
 
 def _role_of(key):
     """各套件的角色数据模块名(CP1 没有 characters 包, 返回 None)。"""
-    return {"CP2": "odette_voj", "CP3": "cp3_trio", "CP4": "cp4_pair"}.get(key)
+    return {"CP2": "odette_voj", "CP3": "cp3_trio",
+            "CP4": "cp4_pair", "CP5": "cp5_pair"}.get(key)
 
 
 def _slug_forms(slug, repo_name):
@@ -131,7 +138,7 @@ def normalize(text, src_slug, dst_slug, dst_key=None, src_key=None, src_repo=Non
       CP1: from . import config as C                (常量在 config.py)
       CP2: from ..characters import odette_voj as C (常量在 characters/<角色>.py)
       CP3: from ..characters import cp3_trio as C
-      CP4: from ..characters import cp4_pair as C
+      CP4: from ..characters import cp5_pair as C
     dst_key 决定往哪个方向改写; src_key 用于先把源的角色模块名归一化。
 
     替换按「长 -> 短」顺序进行, 避免短串先把长串切碎。
@@ -159,7 +166,7 @@ def normalize(text, src_slug, dst_slug, dst_key=None, src_key=None, src_repo=Non
         "CP1": ("原神 CP 壁纸套件 1", "原神CP1", "米提亚 × 沃雅妮莎", "~/.genshin-cp1"),
         "CP2": ("原神 CP 壁纸套件 2", "原神CP2", "奥黛塔 × 沃雅妮莎", "~/.genshen-cp2"),
         "CP3": ("原神 CP 壁纸套件 3", "原神CP3", "米提亚 × 奥黛塔 × 沃雅妮莎", "~/.genshen-cp3"),
-        "CP4": ("原神 CP 壁纸套件 4", "原神CP4", "纳西妲 × 安柏", "~/.genshen-cp4"),
+        "CP4": ("原神 CP 壁纸套件 5", "原神CP5", "桑多涅 × 哥伦比娅", "~/.genshen-cp5"),
     }
     if src_key in CN and dst_key in CN:
         for a, b in zip(CN[src_key], CN[dst_key]):
@@ -171,7 +178,7 @@ def normalize(text, src_slug, dst_slug, dst_key=None, src_key=None, src_repo=Non
                 out = out.replace(a, b)
 
     # 先把「常量模块导入」统一成占位符, 再按目标形态落回。
-    # 注意: 源与目标的角色模块名可能不同(cp4_pair vs odette_voj),
+    # 注意: 源与目标的角色模块名可能不同(cp5_pair vs odette_voj),
     # 所以这里用正则匹配任意模块名, 而不是写死某一个。
     import re
     CONST_IMPORT = re.compile(r"from \.\.characters import \w+ as C|from \. import config as C")
@@ -290,7 +297,7 @@ def check():
 
 def main():
     ap = argparse.ArgumentParser(
-        description="CP1/CP2/CP3/CP4 皮肤引擎同步工具(本机存在哪些套件就处理哪些)")
+        description="CP1~CP5 皮肤引擎同步工具(本机存在哪些套件就处理哪些)")
     ap.add_argument("--to", choices=sorted(PACKS), help="目标套件")
     ap.add_argument("--from", dest="src", choices=sorted(PACKS), default=None,
                     help="源套件(默认 CP2 起较新的那份)")

@@ -1,7 +1,0 @@
-[console_scripts]
-genshen-cp4 = genshen_skin_cp4.engine.cli:main
-genshen-cp4-deepking = genshen_skin_cp4.engine.deepking_cli:main
-genshen-cp4-install = genshen_skin_cp4.engine.autoinstall:main
-genshen-cp4-mcp = genshen_skin_cp4.engine.mcp_server:main
-genshen-cp4-pet = genshen_skin_cp4.engine.pet:main
-genshen-cp4-switcher = genshen_skin_cp4.engine.switcher:main

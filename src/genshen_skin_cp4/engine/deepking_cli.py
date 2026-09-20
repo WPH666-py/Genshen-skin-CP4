@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-原神 CP 壁纸套件 4 —— DeepKing 皮肤命令行
+原神 CP 壁纸套件 5 —— DeepKing 皮肤命令行
 
   genshen-cp4 deepking              # 生成皮肤 JSON + 可视化预览, 并打印接入步骤
   genshen-cp4 deepking --check      # 校验仓库是否满足 DeepKing 转换契约

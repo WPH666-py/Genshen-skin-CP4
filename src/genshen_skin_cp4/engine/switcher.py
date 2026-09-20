@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-原神 CP 壁纸套件 4 —— 可视化切换器
+原神 CP 壁纸套件 5 —— 可视化切换器
 用法: genshen-cp4 switcher   (或 python -m genshen_skin_cp4.switcher)
 
 功能:

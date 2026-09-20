@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-原神 CP 壁纸套件 4 —— DeepKing 皮肤适配层
+原神 CP 壁纸套件 5 —— DeepKing 皮肤适配层
 
 DeepKing(设置 → 界面皮肤)支持粘贴 GitHub 仓库地址, 由其内置转换器
 `src/utils/skinConverter.ts` 抓取仓库里的:
@@ -24,7 +24,7 @@ import json
 import os
 import re
 
-from . import _color as col
+from ..engine import _color as col
 from ..characters import cp4_pair as C
 
 SKIN_VERSION = "0.1.0"
@@ -147,23 +147,21 @@ def skin_meta():
 # src/client/genshen-cp4.module.css 完全一致的取值, 保证在线转换与离线生成一致。
 # 改 CSS 时请同步这里(deepking --what 会打印实际取到的值供比对)。
 FALLBACK_CSS = """:root {
-  --bg-base: #ffffff;
-  --bg-layer-1: #ffffff;
-  --bg-layer-2: #eaf4fc;
-  --bg-layer-3: #d9eaf8;
-  --label-primary: #16243a;
-  --label-secondary: #44607d;
-  --label-tertiary: #7590a8;
-  --brand-primary: #3f8fd8;
-  --accent: #3f8fd8;
-  --primary: #3f8fd8;
-  --interactive-bg-hover-solid: #dcebf9;
-  --interactive-bg-active: #c3ddf3;
-  --border-l1: #d5e6f4;
-  --border-l2: #c2dbf0;
-  --border: #c2dbf0;
-  --system-warn-bg: #fff8e6;
-  --system-warn-text: #8a6a00;
+  --bg-base: #fdfbf7;
+  --bg-layer-1: #fdfbf7;
+  --bg-layer-2: #f4eef2;
+  --bg-layer-3: #e8dde6;
+  --label-primary: #241726;
+  --label-secondary: #5b4560;
+  --label-tertiary: #8d7691;
+  --brand-primary: #a8326e;
+  --accent: #a8326e;
+  --primary: #a8326e;
+  --interactive-bg-hover-solid: #f0e2ec;
+  --interactive-bg-active: #e3cddd;
+  --border-l1: #eadbe6;
+  --border-l2: #dbc6d8;
+  --border: #dbc6d8;
 }
 """
 
@@ -657,8 +655,8 @@ h2{font-size:14px;margin:26px 0 10px;opacity:.75;font-weight:600}
 </body></html>""" % {
         "name": skin["name"], "id": skin["id"], "source": skin.get("source", ""),
         "accent": p["accent"], "region_css": REGION_CSS,
-        "light": region(p, "亮色 · 原神CP4", mascot.get("light")),
-        "dark": region(d, "暗色 · 原神CP4", mascot.get("dark")),
+        "light": region(p, "亮色 · 原神CP5", mascot.get("light")),
+        "dark": region(d, "暗色 · 原神CP5", mascot.get("dark")),
     }
 
 
