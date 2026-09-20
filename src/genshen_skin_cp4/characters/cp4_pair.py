@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 """
-原神 CP 壁纸套件 4 —— 纳西妲 × 安柏 · 角色与素材定义
+原神 CP 壁纸套件 4 —— 柯莱 × 安柏 · 角色与素材定义
 
 这是**唯一需要为本套件改动的文件**。引擎(engine/)与各 CLI/IDE 适配层全部
 读取本文件里的常量, 因此把本文件换成别的角色组合, 整套工具即刻复用。
 
-本套件是**单张样式**: 只有一张素材 `01-nahida.jpg`(森林里的双人合影)。用户可在
+本套件是**单张样式**: 只有一张素材 `01-collei.jpg`(森林里的双人合影)。用户可在
 三种观感之间切换:
 
     single1  默认    模糊填充背景 + 居中圆角卡片, 构图完整不裁切
@@ -23,13 +23,13 @@ VERSION = "0.1.0"
 PACKAGE_NAME = "genshen-skin-cp4"        # PyPI 分发包名
 APP_SLUG = "genshen-cp4"                 # 命令前缀 / 运行时目录名
 APP_NAME = "原神CP4"
-DISPLAY_NAME = "原神 CP 壁纸套件 4 · 纳西妲 × 安柏"
+DISPLAY_NAME = "原神 CP 壁纸套件 4 · 柯莱 × 安柏"
 REPO_NAME = "Genshen-skin-CP4"
 REPO_URL = "https://github.com/WPH666-py/Genshen-skin-CP4"
 
 # 与其它套件并列展示用
 SERIES = "CP4"
-PAIR = "纳西妲 × 安柏"
+PAIR = "柯莱 × 安柏"
 
 # ---------------------------------------------------------------- 运行时目录
 # 生成物一律放这里, 不改动仓库/安装目录
@@ -45,14 +45,14 @@ ASSETS_DIR = ""
 # ---------------------------------------------------------------- 素材
 # 本套件只有这一张。加图只需在此追加文件名 + 在 IMAGE_META 里补一条,
 # 样式列表(MODES)会自动跟着变。
-IMAGE_FILES = ["01-nahida.jpg"]
+IMAGE_FILES = ["01-collei.jpg"]
 IMAGE_NAMES = ["林间"]
 
 # 每张素材的说明(画廊/README 用), 键为 IMAGE_FILES 中的文件名
 IMAGE_META = {
-    "01-nahida.jpg": {
+    "01-collei.jpg": {
         "title": "林间",
-        "desc": "森林里的双人合影: 绿发紫瞳的纳西妲与红枣色长发的安柏相拥, "
+        "desc": "森林里的双人合影: 绿发紫瞳的柯莱与红枣色长发的安柏相拥, "
                 "脚下是草地与黄花, 前景有绿色小生物与红色兔兔伯爵",
         # 桌宠取景: (中心x比例, 中心y比例, 半边长占最短边比例)
         # 取两人的脸与上半身
@@ -76,10 +76,10 @@ MODES = [
 DEFAULT_MODE = "single1"
 
 # ---------------------------------------------------------------- DeepKing 皮肤
-DEEPKING_SKIN_ID = "genshen-cp4-nahida-amber"
-DEEPKING_SKIN_NAME = "原神CP4 · 纳西妲×安柏"
+DEEPKING_SKIN_ID = "genshen-cp4-collei-amber"
+DEEPKING_SKIN_NAME = "原神CP4 · 柯莱×安柏"
 DEEPKING_SKIN_DESC = (
-    "林间同人主题: 主色取自插画里纳西妲的草绿发色与安柏的琥珀棕红, "
+    "林间同人主题: 主色取自插画里柯莱的草绿发色与安柏的琥珀棕红, "
     "搭配林间暖阳黄。亮色为晨光米白, 夜景为深林墨绿。32 槽位逐项校色。"
 )
 # DeepKing 转换器只认 assets/background/ 下的图片作为编辑区水印

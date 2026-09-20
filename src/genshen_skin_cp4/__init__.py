@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-原神 CP 壁纸套件 4 —— 纳西妲 × 安柏
+原神 CP 壁纸套件 4 —— 柯莱 × 安柏
 单张素材壁纸(三种呈现方式) / 桌面桌宠 / 多 IDE 皮肤 / DeepKing 界面皮肤
 
     import genshen_skin_cp4 as gs

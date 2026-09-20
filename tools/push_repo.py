@@ -109,7 +109,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("root")
     ap.add_argument("repo", help="owner/repo")
-    ap.add_argument("--message", default="feat: 原神CP壁纸套件2 · 纳西妲×安柏")
+    ap.add_argument("--message", default="feat: 原神CP壁纸套件2 · 柯莱×安柏")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--branch", default="main")
     args = ap.parse_args()

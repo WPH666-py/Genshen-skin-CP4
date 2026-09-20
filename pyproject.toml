@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "genshen-skin-cp4"
 version = "0.1.0"
-description = "原神 CP 壁纸套件 4 —— 纳西妲 x 安柏: 单张样式一键切换壁纸、桌面桌宠、多 IDE 皮肤 (VSCode/Trae/CodeX/JetBrains/Harness/ClaudeCode/KimiCode/DeepKing)"
+description = "原神 CP 壁纸套件 4 —— 柯莱 x 安柏: 单张样式一键切换壁纸、桌面桌宠、多 IDE 皮肤 (VSCode/Trae/CodeX/JetBrains/Harness/ClaudeCode/KimiCode/DeepKing)"
 readme = "README.md"
 requires-python = ">=3.9"
 license = "MIT"
@@ -20,7 +20,7 @@ keywords = [
     "deepking",
     "vscode",
     "jetbrains",
-    "纳西妲",
+    "柯莱",
     "安柏",
 ]
 classifiers = [

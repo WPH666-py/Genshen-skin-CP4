@@ -82,14 +82,14 @@ def heart_polygon(cx, cy, size, steps=720):
 def make_icon():
     """扩展图标: 钴蓝到薰衣草紫渐变圆角底 + 白色爱心 + 一颗星。
 
-    配色取自插画: 纳西妲的草绿与安柏的琥珀棕红。
+    配色取自插画: 柯莱的草绿与安柏的琥珀棕红。
     """
     from PIL import Image, ImageDraw
     S = 256
     img = Image.new("RGBA", (S, S), (0, 0, 0, 0))
     d = ImageDraw.Draw(img)
     # 渐变底: 上草绿 -> 下琥珀棕红(与皮肤 accent #4f9e4a 同源)
-    top = (79, 158, 74)       # #4f9e4a 纳西妲的草绿
+    top = (79, 158, 74)       # #4f9e4a 柯莱的草绿
     bottom = (196, 97, 42)    # #c4612a 安柏的琥珀棕红
     for y in range(S):
         t = y / (S - 1)

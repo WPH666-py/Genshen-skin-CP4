@@ -1,4 +1,4 @@
-# 原神CP4 — 纳西妲×安柏 · VSCode / Trae / CodeX 扩展
+# 原神CP4 — 柯莱×安柏 · VSCode / Trae / CodeX 扩展
 
 单张样式壁纸一键切换 · 桌面桌宠 · 多 IDE 皮肤。
 

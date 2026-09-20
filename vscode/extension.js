@@ -1,4 +1,4 @@
-// 原神 CP 壁纸套件4 — 纳西妲 × 安柏 · 单张素材三种呈现 (VSCode / Trae / CodeX / Cursor / Windsurf)
+// 原神 CP 壁纸套件4 — 柯莱 × 安柏 · 单张素材三种呈现 (VSCode / Trae / CodeX / Cursor / Windsurf)
 const vscode = require('vscode');
 const { spawn, spawnSync } = require('child_process');
 const os = require('os');
@@ -151,7 +151,7 @@ function spawnGui(moduleName, label) {
 
 // ---------------------------------------------------------------- 画廊视图
 
-// 本套件只有一张素材(纳西妲 × 安柏 双人合影), 因此画廊给的是同一张的
+// 本套件只有一张素材(柯莱 × 安柏 双人合影), 因此画廊给的是同一张的
 // 三种呈现方式。ids 必须与 characters/cp4_pair.py 的 MODES 一致。
 const CARDS = [
   { mode: 'single1', t: '卡片式', img: 'thumb-single1.png', d: '模糊背景 + 居中圆角卡片, 构图完整' },
@@ -213,7 +213,7 @@ function renderHtml(thumb, hasPython) {
     '<button class="alt" data-cmd="switcher">🖼️ 壁纸切换器</button>' +
     '<button class="alt" data-cmd="pet">💙 桌面桌宠</button>' +
     '</div>' +
-    '<div class="foot">原神 CP 壁纸套件4 · 纳西妲 × 安柏 v0.1.0<br/>' +
+    '<div class="foot">原神 CP 壁纸套件4 · 柯莱 × 安柏 v0.1.0<br/>' +
     '给任意 AI 发仓库链接即可自动安装</div>' +
     '<script>const vscode=acquireVsCodeApi();' +
     'document.querySelectorAll("button[data-mode]").forEach(function(b){' +

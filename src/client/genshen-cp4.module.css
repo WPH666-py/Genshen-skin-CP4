@@ -1,5 +1,5 @@
 /**
- * 原神CP4 · 纳西妲×安柏 —— 界面配色变量
+ * 原神CP4 · 柯莱×安柏 —— 界面配色变量
  *
  * 本文件同时被两个消费者读取:
  *   1. DeepKing 的皮肤转换器(src/utils/skinConverter.ts)—— 抓取「--名: 色值」
@@ -9,7 +9,7 @@
  * 以及注释里绝对不能写的四种字符, 全部记在 src/client/SKIN-NOTES.md。
  * 改本文件前请先读那份说明, 改完运行: genshen-cp4 deepking --check
  *
- * 主色取自插画: 纳西妲的草绿发色、安柏的琥珀棕红, 以及林间暖阳黄与深绿树影。
+ * 主色取自插画: 柯莱的草绿发色、安柏的琥珀棕红, 以及林间暖阳黄与深绿树影。
  */
 
 :root {
@@ -26,7 +26,7 @@
   --label-secondary: #4a5c3c;
   --label-tertiary: #7b8c6b;
 
-  /* 品牌强调色: 纳西妲的草绿 */
+  /* 品牌强调色: 柯莱的草绿 */
   --brand-primary: #4f9e4a;
   --accent: #4f9e4a;
   --primary: #4f9e4a;
